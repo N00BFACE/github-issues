@@ -1,0 +1,332 @@
+/* GitHub Issues Block - Frontend Styles */
+
+/* Block Wrapper */
+.wp-block-gif-github-issues {
+    margin: 20px 0;
+}
+
+.wp-block-gif-github-issues .gif-issues-frontend {
+    margin: 0;
+}
+
+/* Block Alignments */
+.wp-block-gif-github-issues.alignwide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-block-gif-github-issues.alignfull {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.wp-block-gif-github-issues.alignfull .gif-issues-frontend {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gutenberg Block Specific Styles */
+.gif-gutenberg-block {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.gif-gutenberg-block .gif-issues-frontend-header {
+    background: #f8f9fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px 6px 0 0;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.gif-gutenberg-block .gif-issues-frontend-list {
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+}
+
+.gif-gutenberg-block .gif-issue-item {
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.gif-gutenberg-block .gif-issue-item:last-child {
+    margin-bottom: 0;
+}
+
+.gif-gutenberg-block .gif-issue-item:hover {
+    border-color: #d0d7de;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Grid Layout Enhancements */
+.gif-gutenberg-block.gif-layout-grid .gif-issues-frontend-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gif-gutenberg-block.gif-layout-grid .gif-issue-item {
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+/* Title Styling */
+.gif-gutenberg-block .gif-issues-title {
+    color: #24292e;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Issue Links */
+.gif-gutenberg-block .gif-issue-title a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.gif-gutenberg-block .gif-issue-title a:hover {
+    color: #0366d6;
+    text-decoration: underline;
+}
+
+.gif-gutenberg-block .gif-issue-title a:visited {
+    color: #6f42c1;
+}
+
+.gif-gutenberg-block .gif-issue-title a:focus {
+    outline: 2px solid #0366d6;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* State Badges */
+.gif-gutenberg-block .gif-issue-state {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.gif-gutenberg-block .gif-issue-state-open {
+    background-color: #d1f4d1;
+    color: #0d4f0d;
+    border: 1px solid #34d058;
+}
+
+.gif-gutenberg-block .gif-issue-state-closed {
+    background-color: #ffd1d5;
+    color: #86181d;
+    border: 1px solid #d73a49;
+}
+
+/* Labels */
+.gif-gutenberg-block .gif-issue-labels {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.gif-gutenberg-block .gif-issue-label {
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Meta Information */
+.gif-gutenberg-block .gif-issue-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #586069;
+}
+
+.gif-gutenberg-block .gif-repository-name {
+    color: #586069;
+    font-size: 16px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gif-gutenberg-block .gif-repository-name strong {
+    color: #24292e;
+    font-weight: 600;
+}
+
+/* Issue Body */
+.gif-gutenberg-block .gif-issue-body {
+    color: #24292e;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e1e4e8;
+}
+
+.gif-gutenberg-block .gif-issue-body p {
+    margin: 0;
+}
+
+/* No Issues State */
+.gif-gutenberg-block .gif-no-issues,
+.gif-gutenberg-block .gif-no-issues-message {
+    text-align: center;
+    color: #586069;
+    font-style: italic;
+    padding: 40px 20px;
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wp-block-gif-github-issues.alignfull {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+    
+    .wp-block-gif-github-issues.alignfull .gif-issues-frontend {
+        padding: 0 15px;
+    }
+    
+    .gif-gutenberg-block .gif-issues-frontend-header,
+    .gif-gutenberg-block .gif-issues-frontend-list {
+        padding: 15px;
+    }
+    
+    .gif-gutenberg-block .gif-issue-item {
+        padding: 12px;
+    }
+    
+    .gif-gutenberg-block .gif-issues-title {
+        font-size: 20px;
+    }
+    
+    .gif-gutenberg-block .gif-issue-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .gif-gutenberg-block .gif-issue-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .gif-gutenberg-block.gif-layout-grid .gif-issues-frontend-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gif-gutenberg-block .gif-issue-title a {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    
+    .gif-gutenberg-block .gif-issue-meta {
+        font-size: 13px;
+    }
+    
+    .gif-gutenberg-block .gif-issue-body {
+        font-size: 13px;
+    }
+    
+    .gif-gutenberg-block .gif-issues-title {
+        font-size: 18px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .gif-gutenberg-block {
+        color: #000 !important;
+        background: #fff !important;
+    }
+    
+    .gif-gutenberg-block .gif-issue-item {
+        border: 1px solid #000 !important;
+        break-inside: avoid;
+        margin-bottom: 10px;
+    }
+    
+    .gif-gutenberg-block .gif-issue-title a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+    
+    .gif-gutenberg-block .gif-issue-labels {
+        display: none;
+    }
+    
+    .gif-gutenberg-block .gif-issue-state {
+        border: 1px solid #000 !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .gif-gutenberg-block .gif-issue-item {
+        border-width: 2px;
+        border-color: #000;
+    }
+    
+    .gif-gutenberg-block .gif-issue-title a {
+        color: #0000EE;
+        font-weight: 700;
+    }
+    
+    .gif-gutenberg-block .gif-issue-state {
+        border-width: 2px;
+        font-weight: 700;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .gif-gutenberg-block .gif-issue-item {
+        transition: none;
+    }
+    
+    .gif-gutenberg-block .gif-issue-item:hover {
+        transform: none;
+    }
+    
+    .gif-gutenberg-block .gif-issue-title a {
+        transition: none;
+    }
+}

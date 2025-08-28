@@ -1,0 +1,220 @@
+/* GitHub Issues Block - Editor Styles */
+
+/* Block Editor Preview */
+.gif-editor-preview {
+    border: 2px dashed #e2e4e7;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0;
+    background: #f8f9fa;
+}
+
+.gif-editor-preview .gif-issues-frontend-header {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.gif-editor-preview .gif-issue-item {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.gif-editor-preview .gif-issue-item:hover {
+    border-color: #007cba;
+}
+
+/* Inspector Controls Styling */
+.components-panel__body .components-base-control {
+    margin-bottom: 16px;
+}
+
+.components-panel__body .components-base-control:last-child {
+    margin-bottom: 0;
+}
+
+/* Block Icon in Inserter */
+.editor-block-list-item-gif-github-issues .editor-block-icon {
+    color: #0366d6;
+}
+
+/* Block Toolbar */
+.block-editor-block-toolbar .components-toolbar-group {
+    border-right: 1px solid #e2e4e7;
+}
+
+/* Notice Styling in Editor */
+.gif-editor-preview .components-notice {
+    margin: 0;
+    padding: 16px;
+}
+
+.gif-editor-preview .components-notice p {
+    margin: 0;
+}
+
+.gif-editor-preview .components-notice a {
+    color: #007cba;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.gif-editor-preview .components-notice a:hover {
+    text-decoration: underline;
+}
+
+/* Grid Layout Preview */
+.gif-editor-preview.gif-layout-grid .gif-issues-frontend-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Issue State Indicators in Editor */
+.gif-editor-preview .gif-issue-state-open {
+    background-color: #d1f4d1;
+    color: #0d4f0d;
+}
+
+.gif-editor-preview .gif-issue-state-closed {
+    background-color: #ffd1d5;
+    color: #86181d;
+}
+
+/* Labels in Editor */
+.gif-editor-preview .gif-issue-label {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+/* Responsive Preview */
+@media (max-width: 782px) {
+    .gif-editor-preview {
+        padding: 15px;
+    }
+    
+    .gif-editor-preview.gif-layout-grid .gif-issues-frontend-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Block Alignment */
+.wp-block-gif-github-issues.alignwide {
+    max-width: 1200px;
+}
+
+.wp-block-gif-github-issues.alignfull {
+    max-width: none;
+}
+
+/* Block Selection State */
+.wp-block-gif-github-issues.is-selected .gif-editor-preview {
+    border-color: #007cba;
+    border-style: solid;
+}
+
+/* Inspector Panel Customizations */
+.block-editor-block-inspector .components-panel__body-title {
+    font-weight: 600;
+}
+
+.components-range-control__wrapper {
+    margin-bottom: 8px;
+}
+
+.components-toggle-control .components-base-control__field {
+    margin-bottom: 0;
+}
+
+/* Block Appender */
+.block-list-appender {
+    margin: 16px 0;
+}
+
+/* Custom Toggle Control Styling */
+.components-toggle-control .components-form-toggle {
+    margin-right: 8px;
+}
+
+/* Select Control Styling */
+.components-select-control__input {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #757575;
+}
+
+.components-select-control__input:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+}
+
+/* Range Control Styling */
+.components-range-control__slider {
+    margin: 0 8px;
+}
+
+.components-range-control__number {
+    min-width: 60px;
+}
+
+/* Text Control Styling */
+.components-text-control__input {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #757575;
+}
+
+.components-text-control__input:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+}
+
+/* Panel Body Spacing */
+.components-panel__body + .components-panel__body {
+    border-top: 1px solid #e2e4e7;
+}
+
+/* Block Validation Error */
+.block-editor-warning {
+    border: 1px solid #f0b849;
+    background: #fff8e1;
+    padding: 16px;
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+/* Loading State */
+.gif-editor-preview.is-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.gif-editor-preview.is-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007cba;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
